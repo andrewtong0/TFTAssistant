@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TFT Assistant</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">  
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<script>
+	function search() {
+		var input, filter, ul, li, a, i, txtValue;
+		input = document.getElementById("searchBar");
+		filter = input.value.toUpperCase();
+		ul = document.getElementById("myUL");
+		li = ul.getElementsByTagName("li");
+		for (i = 0; i < li.length; i++) {
+			a = li[i].getElementsByTagName("a")[0];
+			txtValue = a.id;
+			if (txtValue.toUpperCase().indexOf(filter) > -1) {
+				li[i].style.display = "";
+			} else {
+				li[i].style.display = "none";
+			}
+		}
+	}
+	</script>
+	
+	<body>
+		<h2>Recommended Champion Items</h2>
+		<input type="text" id="searchBar" onkeyup="search()" placeholder="Search for a champion" title="Type in a champion name">
+		<ul id="myUL">
+		  	<li><a id="Aatrox" href="#"><img src="images/aatrox_tft_items.webp"></a></li>
+			<li><a id="Ahri" href="#"><img src="images/ahri_tft_items.webp"></a></li>
+			<li><a id="Akali" href="#"><img src="images/akali_tft_items.0.webp"></a></li>
+			<li><a id="Anivia" href="#"><img src="images/anivia_tft_items.0.webp"></a></li>
+			<li><a id="Ashe" href="#"><img src="images/ashe_tft_items.0.webp"></a></li>
+			<li><a id="Aurelion Sol" href="#"><img src="images/au_sol_tft_items.webp"></a></li>
+			<li><a id="Blitzcrank" href="#"><img src="images/blitzcrank_tft_items.0.webp"></a></li>
+			<li><a id="Brand" href="#"><img src="images/brand_tft_items.webp"></a></li>
+			<li><a id="Braum" href="#"><img src="images/braum_tft_items.0.webp"></a></li>
+			<li><a id="Cho'Gath" href="#"><img src="images/cho_gath_tft_items.0.webp"></a></li>
+			<li><a id="Darius" href="#"><img src="images/darius_tft_items.0.webp"></a></li>
+			<li><a id="Draven" href="#"><img src="images/draven_tft_items.0.webp"></a></li>
+			<li><a id="Elise" href="#"><img src="images/elise_tft_items.0.webp"></a></li>
+			<li><a id="Evelynn" href="#"><img src="images/evelynn_tft_items.0.webp"></a></li>
+			<li><a id="Fiora" href="#"><img src="images/fiora_tft_items.0.webp"></a></li>
+			<li><a id="Gangplank" href="#"><img src="images/gangplank_tft_items.0.webp"></a></li>
+			<li><a id="Garen" href="#"><img src="images/garen_tft_items.0.webp"></a></li>
+			<li><a id="Gnar" href="#"><img src="images/gnar_tft_items.0.webp"></a></li>
+			<li><a id="Graves" href="#"><img src="images/graves_tft_items.0.webp"></a></li>
+			<li><a id="Karthus" href="#"><img src="images/karthus_tft_items.0.webp"></a></li>
+			<li><a id="Kassadin" href="#"><img src="images/kassadin_tft_items.0.webp"></a></li>
+			<li><a id="Katarina" href="#"><img src="images/katarina_tft_items.0.webp"></a></li>
+			<li><a id="Kayle" href="#"><img src="images/kayle_tft_items.0.webp"></a></li>
+			<li><a id="Kennen" href="#"><img src="images/kennen_tft_items.0.webp"></a></li>
+			<li><a id="Kha'Zix" href="#"><img src="images/khazix_tft_items.0.webp"></a></li>
+			<li><a id="Kindred" href="#"><img src="images/kindred_tft_items.0.webp"></a></li>
+			<li><a id="Leona" href="#"><img src="images/leona_tft_items.0.webp"></a></li>
+			<li><a id="Lissandra" href="#"><img src="images/lissandra_tft_items.0.webp"></a></li>
+			<li><a id="Lucian" href="#"><img src="images/lucian_tft_items.0.webp"></a></li>
+			<li><a id="Lulu" href="#"><img src="images/lulu_tft_items.0.webp"></a></li>
+			<li><a id="Miss Fortune" href="#"><img src="images/miss_fortune_tft_items.0.webp"></a></li>
+			<li><a id="Mordekaiser" href="#"><img src="images/mordekaiser_tft_items.0.webp"></a></li>
+			<li><a id="Morgana" href="#"><img src="images/morgana_tft_items.0.webp"></a></li>
+			<li><a id="Nidalee" href="#"><img src="images/nidalee_tft_items.0.webp"></a></li>
+			<li><a id="Poppy" href="#"><img src="images/poppy_tft_items.0.webp"></a></li>
+			<li><a id="Pyke" href="#"><img src="images/pyke_tft_items.0.webp"></a></li>
+			<li><a id="Rek'Sai" href="#"><img src="images/reksai_tft_Items.0.webp"></a></li>
+			<li><a id="Rengar" href="#"><img src="images/rengar_tft_items.0.webp"></a></li>
+			<li><a id="Sejuani" href="#"><img src="images/sejuani_tft_items.0.webp"></a></li>
+			<li><a id="Shen" href="#"><img src="images/shen_tft_items.0.webp"></a></li>
+			<li><a id="Shyvana" href="#"><img src="images/shyvana_tft_items.0.webp"></a></li>
+			<li><a id="Swain" href="#"><img src="images/swain_tft_items.0.webp"></a></li>
+			<li><a id="Tristana" href="#"><img src="images/tristana_tft_items.0.webp"></a></li>
+			<li><a id="Varus" href="#"><img src="images/varus_tft_items.0.webp"></a></li>
+			<li><a id="Vayne" href="#"><img src="images/vayne_tft_items.0.webp"></a></li>
+			<li><a id="Veigar" href="#"><img src="images/veigar_tft_items.0.webp"></a></li>
+			<li><a id="Volibear" href="#"><img src="images/volibear_tft_items.0.webp"></a></li>
+			<li><a id="Warwick" href="#"><img src="images/warwick_tft_items.0.webp"></a></li>
+			<li><a id="Yasuo" href="#"><img src="images/yasuo_tft_items.0.webp"></a></li>
+			<li><a id="Zed" href="#"><img src="images/zed_tft_items.0.webp"></a></li>
+		</ul>
+	</body>
+</html>
